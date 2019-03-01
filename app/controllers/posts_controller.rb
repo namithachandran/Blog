@@ -1,17 +1,24 @@
 # post_controller
 class PostsController < ApplicationController
-  def new; end
+  def new
+    @post = Post.new
+  end
 
   def show
     @post = Post.find(params[:id])
   end
 
-  def index; end
+  def index
+    @posts = Post.all
+  end
 
   def create
     @post = Post.new(post_params)
-    @post.save
-    redirect_to @post
+    if @post.save
+      redirect_to @post
+    else
+      render 'new'
+    end
   end
 
   private
