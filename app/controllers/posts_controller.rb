@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def index
-      @posts = Post.all.page(params[:page]).per(2)
+      @posts = Post.all.page(params[:page])
   end
 
   def edit
