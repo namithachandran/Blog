@@ -24,7 +24,7 @@ Rails.application.configure do
 
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = {
-    host: 'https://desolate-escarpment-11606.herokuapp.com'
+    host: 'https://enigmatic-plateau-45559.herokuapp.com/'
   }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
