@@ -98,6 +98,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.5.3)
       concurrent-ruby (~> 1.0)
+    iniparse (1.4.4)
     io-like (0.3.0)
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
@@ -146,6 +147,9 @@ GEM
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    overcommit (0.46.0)
+      childprocess (~> 0.6, >= 0.6.3)
+      iniparse (~> 1.4)
     pg (1.1.4)
     popper_js (1.14.5)
     public_suffix (3.0.3)
@@ -262,6 +266,7 @@ DEPENDENCIES
   kaminari
   kaminari-bootstrap
   listen (>= 3.0.5, < 3.2)
+  overcommit
   pg
   puma (~> 3.11)
   rails (~> 5.2.2)

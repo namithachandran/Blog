@@ -66,3 +66,4 @@ gem 'jquery-rails'
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem 'carrierwave', '~> 1.0'
+gem 'overcommit', require: false
