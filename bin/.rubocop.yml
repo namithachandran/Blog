@@ -1,0 +1,17 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'spec/vcr/**/*'
+    - 'lib/support/**/*'
+    - 'tmp/**/*'
+    - 'api_doc/**/*'
+    - 'doc/**/*'
+    - 'node_modules/**/*'
+    - 'log/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'Gemfile*'
+  TargetRubyVersion: 2.6.0
+Rails:
+  Enabled: true
