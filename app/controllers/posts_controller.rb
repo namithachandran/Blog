@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # post_controller
 class PostsController < ApplicationController
   def new
@@ -9,7 +11,7 @@ class PostsController < ApplicationController
   end
 
   def index
-      @posts = Post.all.page(params[:page])
+    @posts = Post.all.page(params[:page])
   end
 
   def edit
